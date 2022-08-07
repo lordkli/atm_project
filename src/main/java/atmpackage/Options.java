@@ -85,11 +85,7 @@ public class Options extends Account {
 
     public void checkingOperations() {
         do {
-            System.out.println("Select Options:");
-            System.out.println("1. View Balance");
-            System.out.println("2: Withdraw");
-            System.out.println("3: Deposit");
-            System.out.println("4: Exit");
+            operationsMessage();
             int option = scan.nextInt();
             if (option == 4) {
                 break;
@@ -114,12 +110,7 @@ public class Options extends Account {
 
     public void savingOperations(){
         do {
-        System.out.println("Select Options:");
-        System.out.println("1. View Balance");
-        System.out.println("2: Withdraw");
-        System.out.println("3: Deposit");
-        System.out.println("4: Exit");
-
+        operationsMessage();
         int option = scan.nextInt();
 
         if (option == 4){
@@ -145,7 +136,13 @@ public class Options extends Account {
         }
         }while (true);
 
-
+        }
+        public void operationsMessage(){
+            System.out.println("Select Options:");
+            System.out.println("1. View Balance");
+            System.out.println("2: Withdraw");
+            System.out.println("3: Deposit");
+            System.out.println("4: Exit");
         }
     }
 
